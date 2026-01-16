@@ -1,0 +1,69 @@
+# Generic FastAPI API
+
+
+fastapi_project/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── core/
+│   │   ├── config.py
+│   │   └── security.py
+│   ├── db/
+│   │   ├── base.py
+│   │   ├── session.py
+│   │   └── migrations/        
+│   ├── models/
+│   │   ├── user.py
+│   │   └── item.py
+│   ├── schemas/
+│   │   ├── user.py
+│   │   ├── item.py
+│   │   └── auth.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── deps.py
+│   │   ├── users.py
+│   │   ├── items.py
+│   │   └── auth.py
+│   └── utils/
+│       └── security.py
+├── tests/
+├── .env
+├── requirements.txt
+
+
+
+A **generic, modular**, and maintainable FastAPI backend API built with:
+
+- FastAPI web framework
+- PostgreSQL database
+- SQLAlchemy ORM
+- JWT authentication
+- Pydantic data validation
+
+This project follows a scalable structure suitable for real-world applications.  
+Interactive API docs available at `/docs` or `/redoc`. :contentReference[oaicite:1]{index=1}
+
+---
+
+##  Features
+
+- User signup & login with JWT authentication
+- Role-based API access (admin vs regular)
+- CRUD routes for generic resources
+- Clean project structure with routers, models, schemas
+- Easy to extend with new modules
+
+---
+
+## 🛠 Getting Started
+
+### Prerequisites
+
+Install **Python 3.10+** and PostgreSQL.
+
+### Clone
+
+```bash
+git clone https://github.com/your-username/your-repo
+cd your-repo
